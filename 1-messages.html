@@ -1,0 +1,126 @@
+// КОНСПЕКТ
+
+
+// Кнопка, которая покажет сообщение при нажатии
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пример с кнопкой</title>
+    </head>
+    <body>
+        <button onclick="showMessage()">Нажми меня!</button>
+        <script>
+            function showMessage () {
+                alert("Привет, Дуська!");
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+// Код добавляет текст на страницу
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Скрипт</title>
+    </head>
+    <body>
+        <h1>Привет, мир!</h1>
+        <script>
+            document.write("Привет, Дарьюшка!");
+        </script>
+    </body>
+</html>
+
+
+
+// Скрипт, который запрашивает имя пользователя и приветствует его
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Приветствие</title>
+    </head>
+    <body>
+        <script>
+            var userName = prompt ("Как тебя зовут?");
+            document.write("Привет, " + userName + "!");
+        </script>
+    </body>
+</html>
+
+
+
+// Скрипт, изменяющий текст на странице при нажатии на кнопку
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Изменение текста</title>
+    </head>
+    <body>
+        <h1 id="myHeader">Привет, мир!</h1>
+        <button onclick="changeText()">Изменить текст</button>
+        <script>
+            function changeText () {
+                document.getElementById("myHeader").innerHTML = "Текст изменен!";
+            }
+        </script>
+    </body>
+</html>
+
+
+
+//Изменение цвета текста заголовка на красный
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Изменение стиля</title>
+    </head>
+    <body>
+        <h1 id="myHeader">Привет, мир!</h1>
+        <button onclick="changeStyle()">Изменить стиль</button>
+        <script>
+            function changeStyle () {
+                document.getElementById("myHeader").style.color = "red";
+            }
+        </script>
+    </body>
+</html>
+
+
+
+// Меняет фон страницы при нажатии на кнопку
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Изменение фона</title>
+    </head>
+    <body>
+        <button onclick="changeBackground()">Изменить фон</button>
+        <script>
+            function changeBackground () {
+                document.body.style.backgroundColor = "green";
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+//Скрипт, который покажет окно с сообщением при загрузке страницы
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Приветствие</title>
+        <script>
+            function welcomeMessage () {
+                alert ("Добро пожаловать!");
+            }
+        </script>
+    </head>
+    <body onload="welcomeMessage()">
+    </body>
+</html>

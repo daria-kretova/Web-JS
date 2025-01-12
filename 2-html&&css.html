@@ -1,0 +1,149 @@
+// Этот код создает страницу с заголовком и кнопкой, при клике на которую цвет фона меняется на жёлтый
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Изменение цвета</title>
+        <style>
+            button {
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <h1>Привет, мир!</h1>
+        <button id="colorButton">Изменить цвет фона</button>
+        <script>
+            document.getElementById('colorButton').addEventListener('click', function () {
+                document.body.style.backgroundColor = 'yellow';
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+// Подключение файлов .css и скриптов
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Привет, мир!</h1>
+        <script src="script.js>"></script>
+    </body>
+</html>
+
+
+
+
+// Изменить цвет текста заголовка при нажатии на кнопку
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Изменение текста заголовка</title>
+        <style>
+            button {
+                background-color: green;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <h1 id="header">Заголовок</h1>
+        <button id="headerButton">Изменить цвет заголовка</button>
+        <script>
+            document.getElementById('headerButton').addEventListener('click', function () {
+                document.getElementById('header').style.color = 'orange';
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+// При нажатии на кнопку меняется её текст
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Изменение текста заголовка</title>
+        <style>
+            button {
+                background-color: green;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <button id="textButton">Нажми на меня</button>
+        <script>
+            document.getElementById('textButton').addEventListener('click', function () {
+                this.textContent = 'Вы нажали на меня';
+            });
+        </script>
+    </body>
+</html>
+
+
+
+// Одновременно изменение цвета фона и текста кнопки
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Интерактивная страница</title>
+        <style>
+            button {
+                background-color: orange;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                margin: 5px;
+            }
+        </style> 
+    </head>
+
+    <body>
+        <button id="colorButton">изменить цвет фона</button>
+        <button id="textButton">Нажми на меня</button>
+
+        <script>
+            document.getElementById('colorButton').addEventListener('click', function () {
+                document.body.style.backgroundColor = 'lightblue';
+            });
+
+            document.getElementById('textButton').addEventListener('click', function () {
+                this.textContent = 'Вы нажали на меня';
+            });
+        </script>
+    </body>
+</html> 
+
